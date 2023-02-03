@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Context\Context.csproj" />
+    <ProjectReference Include="..\TarjetaPresentacion.Context\TarjetaPresentacion.Context.csproj" />
     <ProjectReference Include="..\TarjetaPresentacion.Entities\TarjetaPresentacion.Entities.csproj" />
   </ItemGroup>
 

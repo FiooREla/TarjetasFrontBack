@@ -1,4 +1,4 @@
-﻿namespace Context
+﻿namespace TarjetaPresentacion.Context
 {
     public class PrincipalConnection
     {

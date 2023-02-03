@@ -5,17 +5,19 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TarjetaPresentacion.FrontEnd", "TarjetaPresentacion.FrontEnd\TarjetaPresentacion.FrontEnd.csproj", "{06EC9E13-A9FE-4614-B8C3-2B0E3DD1EAB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaPresentacion.API", "TarjetaPresentacion.API\TarjetaPresentacion.API.csproj", "{43FD99E7-FE87-43F9-BBAB-D2115CD8B3D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TarjetaPresentacion.API", "TarjetaPresentacion.API\TarjetaPresentacion.API.csproj", "{43FD99E7-FE87-43F9-BBAB-D2115CD8B3D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaPresentacion.Services", "TarjetaPresentacion.Services\TarjetaPresentacion.Services.csproj", "{2A82A4CF-F32E-4FC5-BE6A-E78A443C7D71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TarjetaPresentacion.Services", "TarjetaPresentacion.Services\TarjetaPresentacion.Services.csproj", "{2A82A4CF-F32E-4FC5-BE6A-E78A443C7D71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaPresentacion.UOW", "TarjetaPresentacion.UOW\TarjetaPresentacion.UOW.csproj", "{2EA85784-0571-4AFB-B1F5-B194655CE022}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TarjetaPresentacion.Repositories", "TarjetaPresentacion.Repositories\TarjetaPresentacion.Repositories.csproj", "{F2563FF9-111E-43D1-A566-856B167E1BF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaPresentacion.Repositories", "TarjetaPresentacion.Repositories\TarjetaPresentacion.Repositories.csproj", "{F2563FF9-111E-43D1-A566-856B167E1BF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TarjetaPresentacion.Entities", "TarjetaPresentacion.Entities\TarjetaPresentacion.Entities.csproj", "{A3E8A219-CF35-435A-BC17-54522059A8A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaPresentacion.Entities", "TarjetaPresentacion.Entities\TarjetaPresentacion.Entities.csproj", "{A3E8A219-CF35-435A-BC17-54522059A8A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "..\..\Proyectos\Core\Core.csproj", "{D140B825-6084-4F19-951A-31AA5F1AC61F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Context", "Context\Context.csproj", "{4750A605-C9C0-4C0C-BC63-9D73C46195DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaPresentacion.Context", "TarjetaPresentacion.Context\TarjetaPresentacion.Context.csproj", "{CECFAF55-2A94-48DB-94AE-8DEE66A39164}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TarjetaPresentacion.UOW", "TarjetaPresentacion.UOW\TarjetaPresentacion.UOW.csproj", "{B4E329AA-9C0E-4C9F-B331-9887F917E811}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +37,6 @@ Global
 		{2A82A4CF-F32E-4FC5-BE6A-E78A443C7D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A82A4CF-F32E-4FC5-BE6A-E78A443C7D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A82A4CF-F32E-4FC5-BE6A-E78A443C7D71}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2EA85784-0571-4AFB-B1F5-B194655CE022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2EA85784-0571-4AFB-B1F5-B194655CE022}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2EA85784-0571-4AFB-B1F5-B194655CE022}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2EA85784-0571-4AFB-B1F5-B194655CE022}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F2563FF9-111E-43D1-A566-856B167E1BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F2563FF9-111E-43D1-A566-856B167E1BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2563FF9-111E-43D1-A566-856B167E1BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,10 +45,18 @@ Global
 		{A3E8A219-CF35-435A-BC17-54522059A8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3E8A219-CF35-435A-BC17-54522059A8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3E8A219-CF35-435A-BC17-54522059A8A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4750A605-C9C0-4C0C-BC63-9D73C46195DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4750A605-C9C0-4C0C-BC63-9D73C46195DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4750A605-C9C0-4C0C-BC63-9D73C46195DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4750A605-C9C0-4C0C-BC63-9D73C46195DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D140B825-6084-4F19-951A-31AA5F1AC61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D140B825-6084-4F19-951A-31AA5F1AC61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D140B825-6084-4F19-951A-31AA5F1AC61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D140B825-6084-4F19-951A-31AA5F1AC61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CECFAF55-2A94-48DB-94AE-8DEE66A39164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CECFAF55-2A94-48DB-94AE-8DEE66A39164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CECFAF55-2A94-48DB-94AE-8DEE66A39164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CECFAF55-2A94-48DB-94AE-8DEE66A39164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4E329AA-9C0E-4C9F-B331-9887F917E811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4E329AA-9C0E-4C9F-B331-9887F917E811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4E329AA-9C0E-4C9F-B331-9887F917E811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4E329AA-9C0E-4C9F-B331-9887F917E811}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
