@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TarjetaPresentacion.UOW\TarjetaPresentacion.UOW.csproj" />
+  </ItemGroup>
+
 </Project>
