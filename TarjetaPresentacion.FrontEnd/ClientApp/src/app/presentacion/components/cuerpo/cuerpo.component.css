@@ -1,0 +1,205 @@
+/*REGION SLIDER*/
+
+.row .opciones{
+    background-color: rgba(0,0,0,0.5);
+    filter: alpha(opacity=50);
+    position: relative;
+    width: 85px;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    right: 0;
+    top: 20;
+    z-index: 2;
+}
+.row .opciones img{
+    width: 25px;
+    display: flex;    
+}
+
+.container-personaje {
+    width: 145px;
+    height: 145px;
+    z-index: 2;
+    position : relative;
+    margin-top: -100px;
+}
+
+.personaje{
+    top: -100;
+    object-fit: cover;
+    box-shadow: 2px 4px 15px 0;
+} 
+
+.imgSlider{
+    height: 178px;
+    object-fit: cover;
+}
+/*FIN REGION SLIDER*/
+
+/*REGION Descripcion Empleado*/
+.contenido{
+    background-color: #F2F2F2;
+}
+.datosEmpleado{
+    padding-top: 15px;
+    color: #7DC0DA;
+}
+.datosEmpleado h1,h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+}
+.borde{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;  
+}
+.borde span{
+    display: flex;
+    justify-content:center;
+    align-items: center;  
+}
+.iconoContacto{
+    background-color: #034392;
+    width: 65px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 3px 0px 19px;
+}
+.iconoContacto img{
+    width: 32.63px;
+}
+#electro{
+    color: #747678;
+    font-size: 16px;
+    padding-top: 20px;
+}
+#linkedin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descripcionredes p{
+    margin-top: 20px;
+    color:#A7A8A9 ;
+    border-top: 0.5px  solid #A7A8A9; 
+    padding-left: 75px;
+    padding-right: 75px;
+    font-size: 10px;
+}
+.iconosRedes img{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 22px;
+    margin: 12px;
+}
+.redes{
+    border-color: #747678;
+}
+.enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enlace a img{
+    width: 19px;
+}
+.enlace a:visited{
+    color: #034392;
+    font-size: 14px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+}
+
+/*FIN Descripcion Empleado*/
+
+/*REGION VIDEO Empleado*/
+.video{
+    padding-top: 30px;
+}
+.descripcionVideo{
+    color: #7DC0DA;
+    display: flex;
+    justify-content: flex-end;
+    border: solid 1px #b6b7b8;
+    padding: 15px 15px;
+    margin-bottom: 20px ;
+}
+/*FIN VIDEO Empleado*/
+
+/*REGION manual Empleado*/
+.imgManual img{
+    width:216px ;
+}
+.imgManual .paginas{
+    padding: 10px;
+}
+.descripcion{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #555;
+    display: table-cell;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.descripcion button{
+    width: 89px;
+    height: 32px;
+    padding: 5px;
+    background-color: #3B333B;
+    color: white;
+}
+.descripcion button img{
+    width: 20px;
+}
+/*FIN manual Empleado*/
+/* .datosGenerales{
+    background-color: #F2F2F2;
+    color: #7DC0DA;
+}
+.datosGenerales .contacto {
+    display: flex;
+    justify-content:space-around;    
+}
+.datosGenerales .contacto .borde{
+    width: 65px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #034392;
+    border-radius: 50%;
+    border-color: none;
+}
+.datosGenerales .contacto .borde img{
+    width: 40.63px;
+}
+.datosGenerales .contacto span{
+    color: black;
+}
+.slogan p{
+    color: #747678;
+}
+.slogan .redes .iconosRedes{
+    display: flex;
+}
+.slogan .redes p{
+    color:#A7A8A9;
+}
+.slogan .redes img{
+    width: 20.63px;
+}
+.video .manual .descripcion .btn{
+    background-color: #3B333B;
+    color: white;
+} */

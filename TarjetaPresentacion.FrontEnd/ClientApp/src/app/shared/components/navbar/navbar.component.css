@@ -1,0 +1,22 @@
+.container{
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.logoElp{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 107px;
+}
+.logoHoja{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 39px;
+}
+.logoHoja img{
+    background-color: #9EC41C;
+    width: 29px;
+    border-radius: 15%;
+}

@@ -1,0 +1,11 @@
+.iconos{
+    background-color: #033F89;
+    height: 77px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color: white;
+}
+.iconos img{
+    width: 44px;
+}

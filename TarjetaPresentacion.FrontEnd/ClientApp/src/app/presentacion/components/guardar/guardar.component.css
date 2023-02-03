@@ -1,0 +1,93 @@
+/*REGION SLIDER*/
+.col .opciones{
+    background-color:white;
+    position: absolute;
+    width: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    right: 0%;
+    margin-top: 146px;
+    font-size: 12px;
+}
+.col .opciones img{
+    width: 12px;
+    display: flex;    
+}
+.container-personaje {
+    width: 145px;
+    height: 145px;
+    z-index: 2;
+    position : relative;
+    margin-top: -100px;
+}
+
+.personaje{
+    top: -100;
+    object-fit: cover;
+    box-shadow: 2px 4px 15px 0;
+} 
+
+.imgSlider{
+    height: 178px;
+    object-fit: cover;
+}
+/*FIN REGION SLIDER*/
+
+/*REGION Descripcion Empleado*/
+.contenido{
+    background-color: #F2F2F2;
+
+}
+.datosEmpleado{
+    padding-top: 15px;
+    color: #7DC0DA;
+}
+.datosEmpleado h1,h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+}
+/*FIN Descripcion Empleado*/
+
+/*REGION COMPARTIR TARJETA*/
+.tarjeta{
+    color: #9FC0DA;
+    
+}
+.iconoCom {
+    width: 38px;
+    height: 33px;
+}
+.rede .imagenes img{
+    width: 91px;
+    height: 86px;
+}
+.compartir{
+    font-size: 30px;
+    margin-top: 45px;
+}
+.acceso{
+    background-color: #034392;
+    color: white ;
+    border-radius: 3px;
+    height: 70px;
+    text-align: center;
+    padding: 8px 9px;
+    margin: 9px 5px 9px 12px;
+    font-size: 12px;
+}
+.subcompartir{
+    padding-top: 20px;
+}
+.subcompartir p{
+    padding-top: 20px;
+    font-weight: bold;
+}
+.contenidoCompartir{
+    padding: 40px 50px 60px 50px;
+}
+
+/*FIN COMPARTIR TARJETA*/
