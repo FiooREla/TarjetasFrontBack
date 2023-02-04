@@ -18,7 +18,25 @@
     width: 25px;
     display: flex;    
 }
+.menu{
+    background-color: rgba(0,0,0,0.5);
+    filter: alpha(opacity=50);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    right:0 ;
+}
 
+.opciones:hover .menu{
+    display: block;
+}
 .container-personaje {
     width: 145px;
     height: 145px;
