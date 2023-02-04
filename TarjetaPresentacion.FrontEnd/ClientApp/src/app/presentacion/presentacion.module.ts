@@ -10,6 +10,7 @@ import { LocalizacionComponent } from './components/localizacion/localizacion.co
 import { QrtarjetaComponent } from './components/qrtarjeta/qrtarjeta.component';
 import { VideoComponent } from "./components/video/video.component";
 import { PublicacionesComponent } from './components/publicaciones/publicaciones.component';
+import { CommonModule } from "@angular/common";
 
 const components = [PrincipalComponent  , VideoComponent, CuerpoComponent , DatosComponent , GuardarComponent , LocalizacionComponent ,QrtarjetaComponent ];
 const pipes = [];
@@ -24,6 +25,7 @@ const directives = [];
   ],
   imports: [
     RouterModule,
+    CommonModule,
     SharedPresentacionModule,
     PresentacionRoutingModule
 

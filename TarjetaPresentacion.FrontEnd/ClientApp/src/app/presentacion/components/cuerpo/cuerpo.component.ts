@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CuerpoComponent {
   
   private id : string;
-
+  public mostrarTextoIconos : boolean = false;
   constructor(private route:ActivatedRoute) {
    
     
@@ -17,4 +17,14 @@ export class CuerpoComponent {
 
 
 }
+  mostrarTexto(){ 
+      
+    this.mostrarTextoIconos = true;
+  }
+  ocultarTexto(){
+
+    console.log("outt")
+    this.mostrarTextoIconos = false;
+  }
+
 }
