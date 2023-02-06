@@ -11,6 +11,7 @@ import { QrtarjetaComponent } from './components/qrtarjeta/qrtarjeta.component';
 import { VideoComponent } from "./components/video/video.component";
 import { PublicacionesComponent } from './components/publicaciones/publicaciones.component';
 import { CommonModule } from "@angular/common";
+import { TrabajadorService } from "./services/trabajador.service";
 
 const components = [PrincipalComponent  , VideoComponent, CuerpoComponent , DatosComponent , GuardarComponent , LocalizacionComponent ,QrtarjetaComponent ];
 const pipes = [];
@@ -30,7 +31,7 @@ const directives = [];
     PresentacionRoutingModule
 
   ],
-  providers: [],
+  providers: [TrabajadorService],
   bootstrap: []
 })
 export class PresentacionModule { }

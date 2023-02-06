@@ -5,7 +5,7 @@ using TarjetaPresentacion.Context;
 using TarjetaPresentacion.Entities;
 using TarjetaPresentacion.Repositories.Interface;
 
-namespace TarjetaPresentacion.Repositories
+namespace TarjetaPresentacion.Repositories.Implementacion
 {
     public class TrabajadorRepository : ITrabajadorRepository
     {

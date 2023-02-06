@@ -17,8 +17,8 @@ namespace TarjetaPresentacion.Context
         public PrincipalContext(PrincipalConnection _principalConnection)
         {
             this._connection = new OdbcConnection(_principalConnection.Cadena);
-            this._connection.Open();
-            this._transaction = this._connection.BeginTransaction();
+            //this._connection.Open();
+            //this._transaction = this._connection.BeginTransaction();
         }
         public void Rollback()
         {

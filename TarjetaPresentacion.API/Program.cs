@@ -2,6 +2,7 @@ using TarjetaPresentacion.API.Extensions;
 using TarjetaPresentacion.Context;
 using TarjetaPresentacion.Repositories;
 using TarjetaPresentacion.Repositories.Interface;
+using TarjetaPresentacion.Repositories.Mock;
 using TarjetaPresentacion.Services;
 using TarjetaPresentacion.UOW;
 using TarjetaPresentacion.UOW.Interface;
@@ -16,9 +17,10 @@ builder.Services.AddSingleton((serviceProvider) => {
 });
 
 builder.Services.ConfigureCors();
+builder.Services.ConfigureUtils();
 builder.Services.AddScoped<IPrincipalContext, PrincipalContext>();
 builder.Services.AddScoped<IPrincipalUOW, PrincipalUOW>();
-builder.Services.AddTransient<ITrabajadorRepository, TrabajadorRepository>();
+builder.Services.AddTransient<ITrabajadorRepository, TrabajadorMockRepository>();
 builder.Services.AddTransient<ITrabajadorService, TrabajadorService>();
 
 
@@ -38,7 +40,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("CorsPolicy");
 app.UseAuthorization();
 
 app.MapControllers();

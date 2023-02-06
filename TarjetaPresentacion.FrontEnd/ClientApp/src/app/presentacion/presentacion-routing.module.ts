@@ -15,68 +15,18 @@ const routes: Routes = [
 
   { path: '', component: PrincipalComponent,
     children: [
-      { path: '', redirectTo: 'presentacion', pathMatch: 'full' },
-      { path: 'presentacion', component: CuerpoComponent },
+      
+      { path: 'presentacion/:id', component: CuerpoComponent },
+      { path: 'compartir/:id', component: CompartirComponent },
+      { path: 'video/:id', component: CompartirComponent },
+      { path: 'guardar/:id', component: DatosComponent },
+      { path: 'localizar/:id', component: DatosComponent },
+      { path: 'qr/:id', component: DatosComponent },
         
     ]
     
   },
-  { path: '', component: CompartirComponent,
-  children: [
-    { path: '', redirectTo: 'compartir/:id', pathMatch: 'full' },
-    { path: 'compartir', component: CompartirComponent },
-      
-  ]
   
-  },
-  { path: '', component: DatosComponent,
-  children: [
-    { path: '', redirectTo: 'datos/:id', pathMatch: 'full' },
-    { path: 'datos', component: DatosComponent },
-      
-  ]
-  
-  },
-  { path: '', component: GuardarComponent,
-  children: [
-    { path: '', redirectTo: 'guardar/:id', pathMatch: 'full' },
-    { path: 'guardar', component: GuardarComponent },
-      
-  ]
-  
-  },
-  { path: '', component: LocalizacionComponent,
-  children: [
-    { path: '', redirectTo: 'localizar', pathMatch: 'full' },
-    { path: 'localizar', component: LocalizacionComponent },
-      
-  ]
-  
-  },
-  { path: '', component: QrtarjetaComponent,
-  children: [
-    { path: '', redirectTo: 'qr/:id', pathMatch: 'full' },
-    { path: 'qr', component: QrtarjetaComponent },
-      
-  ]
-  
-  },
-  { path: '', component: VideoComponent,
-  children: [
-    { path: '', redirectTo: 'video', pathMatch: 'full' },
-    { path: 'video', component: VideoComponent },
-      
-  ]
-  
-  },
-  { path: '', component: PublicacionesComponent,
-  children: [
-    { path: '', redirectTo: 'video/:id', pathMatch: 'full' },
-    { path: 'video', component: PublicacionesComponent },
-      
-  ]
-  
-  },
 ];
 
 @NgModule({
