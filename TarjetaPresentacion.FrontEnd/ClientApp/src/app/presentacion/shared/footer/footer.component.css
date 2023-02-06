@@ -9,3 +9,7 @@
 .iconos img{
     width: 44px;
 }
+.iconos a{
+    text-decoration: none;
+    color: white;
+}

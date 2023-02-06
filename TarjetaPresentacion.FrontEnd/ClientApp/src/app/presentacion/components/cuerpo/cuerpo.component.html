@@ -1,10 +1,25 @@
 <div class="row">
   <div class="col-12 d-flex">
     <img class="imgSlider w-100 px-0"  src="../../../assets/img/slider.png" alt="" />
-    <div class="opciones">
-      <img src="../../../assets/img/compartir.png" alt="" />
-      <img src="../../../assets/img/guardar.png" alt="" />
-      <img src="../../../assets/img/codigoqr.png" alt="" />
+    <!-- <div class="menu" >
+      <a href="">Compartir</a>
+      <a href="">Guardar</a>
+      <a href="">Código QR</a>
+    </div> -->
+    <div class="opciones" (mouseout)="ocultarTexto()" (mouseover) = mostrarTexto()>
+      
+      <ng-container class="" *ngIf="!mostrarTextoIconos">
+        <a href="\compartir"><img src="../../../assets/img/compartir.png" alt="" /></a>
+        <a href="\guardar"><img src="../../../assets/img/guardar.png" alt="" /></a>
+        <a href="\qr"><img src="../../../assets/img/codigoqr.png" alt="" /></a> 
+      </ng-container>
+
+      <ng-container class="" *ngIf="mostrarTextoIconos">
+        <a href="\compartir"><img src="../../../assets/img/compartir.png" alt="" />Compartir</a>
+        <a href="\guardar"><img src="../../../assets/img/guardar.png" alt="" />Guardar</a>
+        <a href="\qr"><img src="../../../assets/img/codigoqr.png" alt="" />Código QR</a> 
+      </ng-container>
+     
     </div>
   </div>
 </div>

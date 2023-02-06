@@ -12,12 +12,14 @@ import { Trabajador } from '../../models/trabajador.model';
 export class CuerpoComponent implements OnInit {
   
   private id : string;
+
   private trabajador :Trabajador = new Trabajador();
   constructor(private route:ActivatedRoute,
               private trabajadorService : TrabajadorService) {
-   
-    
+
+       
     this.id = this.route.snapshot.params['id'];
+
 
 
    } 
@@ -52,4 +54,16 @@ export class CuerpoComponent implements OnInit {
       }
 
   }
+
+}
+  mostrarTexto(){ 
+      
+    this.mostrarTextoIconos = true;
+  }
+  ocultarTexto(){
+
+    console.log("outt")
+    this.mostrarTextoIconos = false;
+  }
+
 }
