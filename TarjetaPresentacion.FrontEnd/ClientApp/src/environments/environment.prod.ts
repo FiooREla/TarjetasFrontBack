@@ -3,15 +3,8 @@ import { Environment } from "./enviroment-model";
 
 export const environment : Environment = {
   production: true,
-  urlAddress: 'http://142.93.8.76',
+  urlAddress: 'http://172.18.12.10:8086',
 };
-//#region url WS Buequeda RUC
-export const environmentBE : Environment = {
-  production: true,
-  urlAddress: 'https://www.cibercont.org',
-};
-//#endregion
-
 
 //#region url WS Busqueda Empresa
 export const environmentBP :Environment =  {

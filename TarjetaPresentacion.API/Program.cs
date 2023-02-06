@@ -1,6 +1,7 @@
 using TarjetaPresentacion.API.Extensions;
 using TarjetaPresentacion.Context;
 using TarjetaPresentacion.Repositories;
+using TarjetaPresentacion.Repositories.Implementacion;
 using TarjetaPresentacion.Repositories.Interface;
 using TarjetaPresentacion.Repositories.Mock;
 using TarjetaPresentacion.Services;
@@ -15,13 +16,14 @@ builder.Services.AddSingleton((serviceProvider) => {
 
     return builder.Configuration.GetSection("Principal").Get<PrincipalConnection>();
 });
-
+builder.Services.AddScoped<IPrincipalContext, PrincipalContext>();
 builder.Services.ConfigureCors();
 builder.Services.ConfigureUtils();
-builder.Services.AddScoped<IPrincipalContext, PrincipalContext>();
+
 builder.Services.AddScoped<IPrincipalUOW, PrincipalUOW>();
-builder.Services.AddTransient<ITrabajadorRepository, TrabajadorMockRepository>();
+builder.Services.AddTransient<ITrabajadorRepository, TrabajadorRepository>();
 builder.Services.AddTransient<ITrabajadorService, TrabajadorService>();
+
 
 
 

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Trabajador } from '../../models/trabajador.model';
 
 @Component({
   selector: 'app-compartir',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./compartir.component.css']
 })
 export class CompartirComponent {
+
+  @Input() trabajador :Trabajador;
 
 }
