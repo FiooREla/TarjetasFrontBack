@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Trabajador } from '../../models/trabajador.model';
 
 @Component({
   selector: 'app-localizacion',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./localizacion.component.css']
 })
 export class LocalizacionComponent {
-
+  @Input() trabajador :Trabajador;
 }

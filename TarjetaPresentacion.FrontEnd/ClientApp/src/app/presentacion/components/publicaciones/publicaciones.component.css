@@ -1,0 +1,118 @@
+/*REGION SLIDER*/
+.col .opciones{
+    background-color:white;
+    position: absolute;
+    width: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    right: 0%;
+    margin-top: 146px;
+    font-size: 12px;
+}
+.col .opciones img{
+    width: 12px;
+    display: flex;    
+}
+.container-personaje {
+    width: 145px;
+    height: 145px;
+    z-index: 2;
+    position : relative;
+    margin-top: -100px;
+}
+
+.personaje{
+    top: -100;
+    object-fit: cover;
+    box-shadow: 2px 4px 15px 0;
+} 
+
+.imgSlider{
+    height: 178px;
+    object-fit: cover;
+}
+/*FIN REGION SLIDER*/
+
+/*REGION Descripcion Empleado*/
+.contenido{
+    background-color: #F2F2F2;
+
+}
+.datosEmpleado{
+    padding-top: 15px;
+    color: #7DC0DA;
+}
+.datosEmpleado h1,h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+}
+/*FIN Descripcion Empleado*/
+.libroAbierto{
+    background: linear-gradient(
+        180deg, rgba(210,209,215,1) 0%, rgba(255,255,255,1) 75%);
+    display: flex;
+    justify-content: center;
+}
+
+.libroAbierto .imgManual {
+    background: linear-gradient(
+        180deg, rgba(210,209,215,1) 0%, rgba(255,255,255,1) 75%);
+}
+.col .descripcion  {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.col .descripcion span {
+    padding: 10px;
+}
+.libroAbierto{
+    background: linear-gradient(
+        180deg, rgba(210,209,215,1) 0%, rgba(255,255,255,1) 75%);
+    display: flex;
+    justify-content: center;
+}
+
+.libroAbierto .imgManual {
+    background: linear-gradient(
+        180deg, rgba(210,209,215,1) 0%, rgba(255,255,255,1) 75%);
+}
+.col .descripcion  {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.col .descripcion span {
+    padding: 10px;
+}
+.imgManual img{
+    width:216px ;
+}
+.imgManual .paginas{
+    padding: 10px;
+}
+.descripcion{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #555;
+    display: table-cell;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.descripcion button{
+    width: 89px;
+    height: 32px;
+    padding: 5px;
+    background-color: #3B333B;
+    color: white;
+}
+.descripcion button img{
+    width: 20px;
+}

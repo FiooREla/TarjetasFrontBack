@@ -1,1 +1,50 @@
-<p>publicaciones works!</p>
+<div class="row">
+    <div class="contenido col-12 col-md-4">
+      <div class="row d-flex justify-content-center">
+        <div class="px-0 container-personaje">
+          <img
+            class="w-100 h-100 rounded-circle personaje"
+            src="../../../assets/img/personaje.jfif"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row datosEmpleado d-flex d-justify-content-center d-align-items-center">
+        <h1>
+          {{ trabajador.nombres }} {{ trabajador.apellidopaterno }}
+          {{ trabajador.apellidomaterno }}
+        </h1>
+        <h3>Gerente General</h3>
+      </div>
+    </div>
+  
+    <div class="tarjeta col-12 col-md-8">
+      <div class="compartir d-flex justify-content-center">      
+        <div>
+          <p style="padding: 10px">Pulse en la portada para acceder al contenido.</p>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="libroAbierto">
+          <div class="col">
+            <div class="imgManual">
+              <img src="../../../assets/img/manual.png" alt="" />
+              <div style="color: rgb(179, 178, 178)" class="paginas">páginas: 116</div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center d-align-items-center">
+            <div class="descripcion">
+              <span>Memoria Sostenible 2021</span>
+              <button type="button" class="btn btn-outline-dark" >
+                <a href="https://content.bhybrid.com/publication/575e676b/mobile/" style="text-decoration: none; color: white;" >
+                  <img src="../../../assets/img/libroAbierto.png" alt="" />
+                  Abrir
+                </a>    
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

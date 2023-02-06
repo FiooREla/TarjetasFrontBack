@@ -13,13 +13,6 @@ export const environment : Environment = {
   production: false,
   urlAddress: 'http://localhost:5002',
 };
-//#region url WS Buequeda RUC
-export const environmentBE : Environment = {
-  production: false,
-  urlAddress: 'https://www.cibercont.org',
-};
-//#endregion
-
 
 //#region url WS Busqueda Empresa
 export const environmentBP :Environment =  {

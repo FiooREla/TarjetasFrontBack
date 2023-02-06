@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Trabajador } from '../../models/trabajador.model';
 
 @Component({
   selector: 'app-publicaciones',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class PublicacionesComponent {
 
+  @Input() trabajador :Trabajador;
 }
