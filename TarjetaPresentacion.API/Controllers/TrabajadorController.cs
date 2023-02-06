@@ -20,7 +20,7 @@ public class TrabajadorController : Controller {
         _statusCodeBuilder = statusCodeBuilder;
 
     }
-    [HttpGet]
+    [HttpGet("GetAll")]
     public async Task<IActionResult> GetAll()
     {
         

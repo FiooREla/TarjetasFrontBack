@@ -1,20 +1,55 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TrabajadorService } from '../../services/trabajador.service';
+import { APIResponse } from '../../../shared/models/api-reponse.model';
+import { Trabajador } from '../../models/trabajador.model';
 
 @Component({
   selector: 'app-cuerpo',
   templateUrl: './cuerpo.component.html',
   styleUrls: ['./cuerpo.component.css']
 })
-export class CuerpoComponent {
+export class CuerpoComponent implements OnInit {
   
   private id : string;
-
-  constructor(private route:ActivatedRoute) {
+  private trabajador :Trabajador = new Trabajador();
+  constructor(private route:ActivatedRoute,
+              private trabajadorService : TrabajadorService) {
    
     
     this.id = this.route.snapshot.params['id'];
 
 
-}
+   } 
+  ngOnInit(): void {
+    
+    
+  
+  }
+
+  findById(){
+
+      if(this.id){
+        
+        this.trabajadorService.findByID(this.id).subscribe( (resultado : APIResponse) => {
+          
+          console.log('this.id',resultado);
+          this.trabajador =  resultado.valorObjeto as Trabajador;
+                 
+        } , (error)=> {
+    
+            try {
+              
+            } catch (error) {
+              
+            }
+           
+            
+        } );
+      }
+      else{
+
+      }
+
+  }
 }
