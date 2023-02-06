@@ -7,9 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Proyectos\Core\Core.csproj" />
     <ProjectReference Include="..\TarjetaPresentacion.Context\TarjetaPresentacion.Context.csproj" />
     <ProjectReference Include="..\TarjetaPresentacion.Repositories\TarjetaPresentacion.Repositories.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Core">
+      <HintPath>..\Librerias\Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

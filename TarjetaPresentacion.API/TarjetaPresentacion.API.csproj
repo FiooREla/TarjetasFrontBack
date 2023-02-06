@@ -11,8 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Proyectos\Core\Core.csproj" />
     <ProjectReference Include="..\TarjetaPresentacion.Services\TarjetaPresentacion.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Core">
+      <HintPath>..\Librerias\Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

@@ -16,4 +16,10 @@
     <ProjectReference Include="..\TarjetaPresentacion.Entities\TarjetaPresentacion.Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Core">
+      <HintPath>..\Librerias\Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

@@ -13,9 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TarjetaPresentacion.Reposit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TarjetaPresentacion.Entities", "TarjetaPresentacion.Entities\TarjetaPresentacion.Entities.csproj", "{A3E8A219-CF35-435A-BC17-54522059A8A7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "..\..\Proyectos\Core\Core.csproj", "{D140B825-6084-4F19-951A-31AA5F1AC61F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarjetaPresentacion.Context", "TarjetaPresentacion.Context\TarjetaPresentacion.Context.csproj", "{CECFAF55-2A94-48DB-94AE-8DEE66A39164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TarjetaPresentacion.Context", "TarjetaPresentacion.Context\TarjetaPresentacion.Context.csproj", "{CECFAF55-2A94-48DB-94AE-8DEE66A39164}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TarjetaPresentacion.UOW", "TarjetaPresentacion.UOW\TarjetaPresentacion.UOW.csproj", "{B4E329AA-9C0E-4C9F-B331-9887F917E811}"
 EndProject
@@ -45,10 +43,6 @@ Global
 		{A3E8A219-CF35-435A-BC17-54522059A8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3E8A219-CF35-435A-BC17-54522059A8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3E8A219-CF35-435A-BC17-54522059A8A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D140B825-6084-4F19-951A-31AA5F1AC61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D140B825-6084-4F19-951A-31AA5F1AC61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D140B825-6084-4F19-951A-31AA5F1AC61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D140B825-6084-4F19-951A-31AA5F1AC61F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CECFAF55-2A94-48DB-94AE-8DEE66A39164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CECFAF55-2A94-48DB-94AE-8DEE66A39164}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CECFAF55-2A94-48DB-94AE-8DEE66A39164}.Release|Any CPU.ActiveCfg = Release|Any CPU

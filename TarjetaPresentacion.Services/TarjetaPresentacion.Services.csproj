@@ -10,4 +10,10 @@
     <ProjectReference Include="..\TarjetaPresentacion.UOW\TarjetaPresentacion.UOW.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Core">
+      <HintPath>..\Librerias\Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
