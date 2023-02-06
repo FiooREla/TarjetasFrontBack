@@ -6,7 +6,7 @@ import { HttpParams } from '@angular/common/http';
 export class TrabajadorService {
 
     private construirRuta(ruta: string): string {
-        return `api/usuario/${ruta}`;
+        return `api/Trabajador/${ruta}`;
     }
     constructor( private repository: RepositoryService) {
       

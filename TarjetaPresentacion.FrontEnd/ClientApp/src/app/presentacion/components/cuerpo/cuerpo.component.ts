@@ -12,7 +12,7 @@ import { Trabajador } from '../../models/trabajador.model';
 export class CuerpoComponent implements OnInit {
   
   private id : string;
-
+  public mostrarTextoIconos : boolean;
   private trabajador :Trabajador = new Trabajador();
   constructor(private route:ActivatedRoute,
               private trabajadorService : TrabajadorService) {
@@ -20,23 +20,25 @@ export class CuerpoComponent implements OnInit {
        
     this.id = this.route.snapshot.params['id'];
 
+    
 
+  }
 
-   } 
   ngOnInit(): void {
     
-    
+    this.findById();
   
   }
 
   findById(){
 
+     console.log('this.id',this.id);
+
       if(this.id){
         
         this.trabajadorService.findByID(this.id).subscribe( (resultado : APIResponse) => {
           
-          console.log('this.id',resultado);
-          this.trabajador =  resultado.valorObjeto as Trabajador;
+           this.trabajador =  resultado.valorObjeto as Trabajador;
                  
         } , (error)=> {
     
@@ -54,8 +56,6 @@ export class CuerpoComponent implements OnInit {
       }
 
   }
-
-}
   mostrarTexto(){ 
       
     this.mostrarTextoIconos = true;
@@ -65,5 +65,6 @@ export class CuerpoComponent implements OnInit {
     console.log("outt")
     this.mostrarTextoIconos = false;
   }
-
 }
+  
+
