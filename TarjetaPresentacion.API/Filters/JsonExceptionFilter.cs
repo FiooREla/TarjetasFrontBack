@@ -39,6 +39,7 @@ namespace TarjetaPresentacion.API.Filters
                 estadoDeEjecucion.TipoEstado = Tipo.Error;
                 Mensaje mensaje = new Mensaje();
                 mensaje.MensajeGenerado = "Error Interno de Servidor";
+                mensaje.DetalleDelMensaje = $"{context.Exception.Message}-{context.Exception.InnerException}";
                 mensaje.AccionARealizar = "Comuníquese con soporte técnico.";
                
                 estadoDeEjecucion.AgregarMensaje(mensaje);

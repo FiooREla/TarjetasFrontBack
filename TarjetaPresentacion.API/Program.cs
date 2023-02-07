@@ -1,4 +1,5 @@
 using TarjetaPresentacion.API.Extensions;
+using TarjetaPresentacion.API.Filters;
 using TarjetaPresentacion.Context;
 using TarjetaPresentacion.Repositories;
 using TarjetaPresentacion.Repositories.Implementacion;
@@ -16,6 +17,8 @@ builder.Services.AddSingleton((serviceProvider) => {
 
     return builder.Configuration.GetSection("Principal").Get<PrincipalConnection>();
 });
+
+
 builder.Services.AddScoped<IPrincipalContext, PrincipalContext>();
 builder.Services.ConfigureCors();
 builder.Services.ConfigureUtils();
@@ -24,7 +27,11 @@ builder.Services.AddScoped<IPrincipalUOW, PrincipalUOW>();
 builder.Services.AddTransient<ITrabajadorRepository, TrabajadorRepository>();
 builder.Services.AddTransient<ITrabajadorService, TrabajadorService>();
 
-
+builder.Services.AddMvc(
+            options => {
+                options.EnableEndpointRouting = false;
+                options.Filters.Add(typeof(JsonExceptionFilter));
+            });
 
 
 builder.Services.AddControllers();
@@ -40,6 +47,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseDeveloperExceptionPage();
 
 app.UseHttpsRedirection();
 app.UseCors("CorsPolicy");
