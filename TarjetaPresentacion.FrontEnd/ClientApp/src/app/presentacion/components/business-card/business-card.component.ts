@@ -63,9 +63,8 @@ export class BusinessCardComponent implements OnInit {
 
               if(error.codigo ==500){
 
-                 //error interno de servidor o no conecta a la api
+                this.router.navigate(['/500']);//error interno de servidor o no conecta a la api
 
-                
               }
               else if(error.codigo ==404) {
   
