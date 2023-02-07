@@ -1,0 +1,29 @@
+.contenido{
+    background-color: #F7F7F7;
+}
+.imagen img{
+    width: 220px;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto p{
+    font-size: 150px;
+    color: #0079BE;
+    font-family: cursive;
+
+}
+.descripcion p{
+    font-size: 35px;
+    font-weight: lighter;
+}
+.descripcion span{
+    font-weight: lighter;
+}
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
