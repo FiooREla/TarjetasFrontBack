@@ -1,15 +1,4 @@
 <div class="row">
-  <div class="col d-flex justify-content-center">
-      <div class="opciones">
-          Cerrar
-          <a href="\presentacion"><img src="../../../assets/img/cerca.png" alt="" /></a>        
-      </div>
-    </div>
-  <div class="row">
-    <img class="imgSlider" src="../../../assets/img/slider.png" alt="" />
-  </div>
-</div>
-<div class="row">
   <div class="contenido col-12 col-md-4">
     <div class="row d-flex justify-content-center">
       <div class="px-0 container-personaje">
@@ -20,10 +9,11 @@
         />
       </div>
     </div>
-    <div
-      class="row datosEmpleado d-flex d-justify-content-center d-align-items-center"
-    >
-      <h1>Ing. Edwin San Román Zubizarreta</h1>
+    <div class="row datosEmpleado d-flex d-justify-content-center d-align-items-center">
+      <h1>
+        {{ trabajador.nombres }} {{ trabajador.apellidopaterno }}
+        {{ trabajador.apellidomaterno }}
+      </h1>
       <h3>Gerente General</h3>
     </div>
   </div>

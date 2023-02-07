@@ -1,0 +1,96 @@
+<div class="container-fluid">
+  <app-navbar></app-navbar>
+
+  <div class="row">
+    <div class="col-12 d-flex">
+      <img
+        class="imgSlider w-100 px-0"
+        src="../../../assets/img/slider.png"
+        alt=""
+      />
+      <!-- <div class="menu" >
+            <a href="">Compartir</a>
+            <a href="">Guardar</a>
+            <a href="">Código QR</a>
+          </div> -->
+      <div
+        class="opciones d-flex"
+        (mouseout)="ocultarTexto()"
+        (mouseover)="mostrarTexto()"
+      >
+        <ng-container class="" *ngIf="!mostrarTextoIconos">
+          <a (click)="cambiarContenidoAMostrar(1)"
+            ><img src="../../../assets/img/compartir.png" alt=""
+          /></a>
+          <a (click)="cambiarContenidoAMostrar(3)"
+            ><img src="../../../assets/img/guardar.png" alt=""
+          /></a>
+          <a (click)="cambiarContenidoAMostrar(6)"
+            ><img src="../../../assets/img/codigoqr.png" alt=""
+          /></a>
+        </ng-container>
+
+        <ng-container class="" *ngIf="mostrarTextoIconos">
+          <a (click)="cambiarContenidoAMostrar(1)"
+            ><img src="../../../assets/img/compartir.png" alt="" />Compartir</a
+          >
+          <a (click)="cambiarContenidoAMostrar(3)"
+            ><img src="../../../assets/img/guardar.png" alt="" />Guardar</a
+          >
+          <a (click)="cambiarContenidoAMostrar(6)"
+            ><img src="../../../assets/img/codigoqr.png" alt="" />Código QR</a
+          >
+        </ng-container>
+
+        <!-- <div class="opciones">
+                Cerrar
+                <a (click)="cambiarContenidoAMostrar(0)"><img src="../../../assets/img/cerca.png" alt="" /></a>
+            </div> -->
+      </div>
+    </div>
+  </div>
+  <ng-container *ngIf="contenido == 0">
+    <app-principal [trabajador]="trabajador"></app-principal>
+  </ng-container>
+  <ng-container *ngIf="contenido == 1">
+    <app-compartir [trabajador]="trabajador"></app-compartir>
+  </ng-container>
+  <ng-container *ngIf="contenido == 2">
+    <app-datos [trabajador]="trabajador"></app-datos>
+  </ng-container>
+  <ng-container *ngIf="contenido == 3">
+    <app-guardar [trabajador]="trabajador"></app-guardar>
+  </ng-container>
+  <ng-container *ngIf="contenido == 4">
+    <app-localizacion [trabajador]="trabajador"></app-localizacion>
+  </ng-container>
+  <ng-container *ngIf="contenido == 5">
+    <app-publicaciones [trabajador]="trabajador"></app-publicaciones>
+  </ng-container>
+  <ng-container *ngIf="contenido == 6">
+    <app-qrtarjeta [trabajador]="trabajador"></app-qrtarjeta>
+  </ng-container>
+  <ng-container *ngIf="contenido == 7">
+    <app-video [trabajador]="trabajador"></app-video>
+  </ng-container>
+
+  <div class="footer d-flex d-align-items-center">
+    <ng-container class="" *ngIf="!mostrarTextoIconos">
+      <a (click)="cambiarContenidoAMostrar(2)"
+        ><img src="../../../assets/img/contact.png" alt="" />Contactar</a
+      >
+      <a (click)="cambiarContenidoAMostrar(4)"
+        ><img src="../../../assets/img/ubicacion.png" alt="" />Localización</a
+      >
+      <a (click)="cambiarContenidoAMostrar(7)"
+        ><img src="../../../assets/img/camara.png" alt="" />    Video</a
+      >
+      <a (click)="cambiarContenidoAMostrar(5)"
+        ><img
+          src="../../../assets/img/libroAbierto.png"
+          alt=""
+        />  Publicaciones</a
+      >
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.imgSlider{
+    height: 178px;
+    object-fit: cover;
+}
+.opciones{
+    background-color: rgba(0,0,0,0.5);
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+
+}
+.opciones img{
+    width: 25px ;
+}
+.footer{
+    background-color: #033F89;
+    color: white;
+    justify-content: space-around;
+    padding: 10px 10px;
+}
+.footer img{
+    height: 34px;
+}
