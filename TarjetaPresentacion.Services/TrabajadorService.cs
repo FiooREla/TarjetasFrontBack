@@ -38,13 +38,28 @@ namespace TarjetaPresentacion.Services
 
             Trabajador entidad = await this._principalUOW._trabajadorRepository.FindByIDAsync(id);
 
-            return new EstadoDeEjecucion<Trabajador>()
-            {
-                Status = true,
-                TipoEstado = Tipo.Ok,
-                Mensajes = new List<Mensaje>(),
-                ValorObjeto = entidad
-            };
+            if (entidad==null) {
+
+                return new EstadoDeEjecucion<Trabajador>()
+                {
+                    Status = false,
+                    TipoEstado = Tipo.ErrorDeRecursoNoEncontrado,
+                    Mensajes = new List<Mensaje>(),
+                    ValorObjeto = null
+                };
+            }
+            else {
+
+                return new EstadoDeEjecucion<Trabajador>()
+                {
+                    Status = true,
+                    TipoEstado = Tipo.Ok,
+                    Mensajes = new List<Mensaje>(),
+                    ValorObjeto = entidad
+                };
+
+            }
+          
 
         }
     }

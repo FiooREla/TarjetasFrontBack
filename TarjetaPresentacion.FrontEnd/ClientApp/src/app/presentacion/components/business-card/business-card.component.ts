@@ -29,7 +29,7 @@ export enum ContenidoAMostrar {
 export class BusinessCardComponent implements OnInit {
 
    public contenido :ContenidoAMostrar = ContenidoAMostrar.Principal;
-   public trabajador : Trabajador = new Trabajador();
+   public trabajador : Trabajador;
    public mostrarTextoIconos : boolean = false;
    public id : string;
 
@@ -61,22 +61,28 @@ export class BusinessCardComponent implements OnInit {
         }, (error:APIResponse)=> {
             try {
 
+
+              console.log('error', error);
+
               if(error.codigo ==500){
 
-                this.router.navigate(['/500']);//error interno de servidor o no conecta a la api
+                this.router.navigate(['./500']);//error interno de servidor o no conecta a la api
 
               }
               else if(error.codigo ==404) {
   
-                  this.router.navigate(['/404']);
+                  this.router.navigate(['./404']);
               }
              
               else {
-  
+                console.log('else error', error);
+
               }
               
             } catch (error) {
-              
+
+              console.log('catch error', error);
+
             }
             
             

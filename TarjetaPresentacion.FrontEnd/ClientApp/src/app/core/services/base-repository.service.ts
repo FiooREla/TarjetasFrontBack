@@ -120,7 +120,7 @@ export class BaseRepositoryService {
       
           if (error.status === 0) {
          
-            response.codigo = 0; 
+            response.codigo = 500; 
             response.status = false;
 
             let mensaje = new Mensaje();
